@@ -10,10 +10,9 @@ import LoadingBar from 'react-top-loading-bar';
 import Footer from './components/Footer';
 
 const App = () => {
-  const pageSize = 5;
+  const pageSize = 3;
   const apiKey = process.env.REACT_APP_NEWS_API
   const [progress, setProgress] = useState(0)
-
 
   return (
     <div>

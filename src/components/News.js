@@ -46,7 +46,7 @@ const News = (props) => {
 
     return (
         <div className="container">
-            <h1 className="text-center my-2" style={{ margin: '90px 35px 0px' }}>Marleen's NewsApp - Top {cpfrltr(props.category)} Headlines from Germany</h1>
+            <h1 className="text-center my-4" style={{ margin: '90px 35px 0px' }}>Marleen's News App - Top {cpfrltr(props.category)} Headlines from Germany</h1>
             {loading && <Spinner />}
             <InfiniteScroll
                 dataLength={articles.length}
@@ -55,7 +55,6 @@ const News = (props) => {
                 loader={<Spinner />}
             >
                 <div className="container">
-
                     <div className="row">
                         {articles.map((element) => {
                             return <div className="col-md-4" key={element.url} >
@@ -65,7 +64,6 @@ const News = (props) => {
                     </div>
                 </div>
             </InfiniteScroll>
-
         </div>
     )
 }
