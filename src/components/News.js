@@ -46,7 +46,7 @@ const News = (props) => {
 
     return (
         <div className="container">
-            <h1 className="text-center my-2" style={{ margin: '90px 35px 0px' }}>NewsApp - Top {cpfrltr(props.category)} Headlines from Germany</h1>
+            <h1 className="text-center my-2" style={{ margin: '90px 35px 0px' }}>Marleen's NewsApp - Top {cpfrltr(props.category)} Headlines from Germany</h1>
             {loading && <Spinner />}
             <InfiniteScroll
                 dataLength={articles.length}
