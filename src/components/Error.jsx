@@ -3,10 +3,8 @@ import React from 'react'
 const Error = () => {
     return (
         <div className="text-center">
-            <h1>Sorry Baby This API Doesn't Work, I Love You &#10084;</h1>
-            <p>
-                You Can Use Your Other Apps
-            </p>
+            <h2>Sorry Baby, This API Doesn't Work As of Now, I Love You &#10084;</h2>
+            <h5>You Can Use Your Other Apps Meanwhile</h5>
             <ul className="list-unstyled my-3">
                 <li className="ms-3 my-2">
                     <a className="text-decoration-none" href="https://marleen-weather.netlify.app" target={'_blank'} rel='noreferrer'>Marleen's Weather App</a>

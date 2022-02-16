@@ -50,9 +50,7 @@ const News = (props) => {
     return (
         <div className="container">
             <h1 className="text-center my-4" style={{ margin: '90px 35px 0px' }}>Marleen's News App - Top {cpfrltr(props.topic)} Headlines from {props.country === 'de' ? 'Germany' : 'India'}</h1>
-            {loading && <Spinner />}
-            {error ?
-                <Error />
+            {loading ? <Spinner /> : error ? <Error />
                 :
                 <InfiniteScroll
                     dataLength={articles.length}
