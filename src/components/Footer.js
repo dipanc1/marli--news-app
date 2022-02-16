@@ -11,7 +11,6 @@ const Footer = () => {
                         Dipan
                     </a>
                     <span className="text-muted">{'for Marleen © ' + new Date().getFullYear()}</span>
-
                 </div>
 
                 <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
