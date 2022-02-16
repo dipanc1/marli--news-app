@@ -19,7 +19,7 @@ const News = (props) => {
 
     const updateNews = async () => {
         props.setProgress(10);
-        const url = `https://gnews.io/api/v4/top-headlines?country=${props.country}&topic=${props.topic}&token=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
+        const url = `https://gnews.io/api/v4/top-headlines?country=${props.country}&topic=${props.topic}&token=${props.apiKey}&page=${page}&pageSize=${props.pageSize}&lang=${props.language}`;
         setLoading(true)
         let data = await fetch(url);
         props.setProgress(30);
@@ -34,7 +34,7 @@ const News = (props) => {
 
     useEffect(() => {
         updateNews();
-    }, [props.country])
+    }, [props.country, props.language])
 
 
     const fetchMoreData = async () => {
