@@ -15,8 +15,8 @@ const Footer = () => {
 
                 <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
                     <li className="ms-3"><a className="text-muted" href="https://twitter.com/chhabradipan" target={'_blank'} rel='noreferrer'><img src="https://cdn-icons-png.flaticon.com/512/25/25347.png" alt="twitter" height={25} width={25} /></a></li>
-                    <li className="ms-3"><a className="text-muted" href="https://www.instagram.com/dipanchhabra/" target={'_blank'} rel='noreferrer'><img src="https://cdn-icons.flaticon.com/png/512/717/premium/717392.png?token=exp=1644836748~hmac=024be79af3aeb9bb47226da14e83659a" alt="instagram" height={25} width={25} /></a></li>
-                    <li className="ms-3"><a className="text-muted" href="https://www.facebook.com/dipanc1" target={'_blank'} rel='noreferrer'><img src="https://cdn-icons.flaticon.com/png/512/2168/premium/2168281.png?token=exp=1644836623~hmac=08f9007a087f6426fc98ca0da313d3cf" alt="facebook" height={25} width={25} /></a></li>
+                    <li className="ms-3"><a className="text-muted" href="https://www.instagram.com/dipanchhabra/" target={'_blank'} rel='noreferrer'><img src="logos/instagram.png" alt="instagram" height={25} width={25} /></a></li>
+                    <li className="ms-3"><a className="text-muted" href="https://www.facebook.com/dipanc1" target={'_blank'} rel='noreferrer'><img src="logos/facebook.png" alt="facebook" height={25} width={25} /></a></li>
                 </ul>
             </footer>
         </div>

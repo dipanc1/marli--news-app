@@ -17,7 +17,6 @@ const News = (props) => {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
-
     const updateNews = async () => {
         props.setProgress(10);
         const url = `https://gnews.io/api/v4/top-headlines?country=${props.country}&topic=${props.topic}&token=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
@@ -35,11 +34,11 @@ const News = (props) => {
 
     useEffect(() => {
         updateNews();
-    }, [])
+    }, [props.country])
 
 
     const fetchMoreData = async () => {
-        setPage(page + 1)
+        setPage(page + 1 >= 4)
         const url = `https://gnews.io/api/v4/top-headlines?country=${props.country}&topic=${props.topic}&token=${props.apiKey}&page=${page + 1}&pageSize=${props.pageSize}`;
         let data = await fetch(url);
         let parsedData = await data.json();
@@ -50,7 +49,7 @@ const News = (props) => {
 
     return (
         <div className="container">
-            <h1 className="text-center my-4" style={{ margin: '90px 35px 0px' }}>Marleen's News App - Top {cpfrltr(props.topic)} Headlines from Germany</h1>
+            <h1 className="text-center my-4" style={{ margin: '90px 35px 0px' }}>Marleen's News App - Top {cpfrltr(props.topic)} Headlines from {props.country === 'de' ? 'Germany' : 'India'}</h1>
             {loading && <Spinner />}
             {error ?
                 <Error />
