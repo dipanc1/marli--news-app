@@ -45,19 +45,19 @@ const App = () => {
         <div className="container d-flex justify-content-between mt-2">
 
           <div className="btn-group" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" className="btn-check" name="btnradio" id="btnradio1" autoComplete="off" checked={country === 'de' ? true : false} />
-            <label className="btn btn-outline-secondary" htmlFor="btnradio1" onClick={handleGermany}>Germany</label>
+            <input type="radio" className="btn-check" name="btnradio" id="btnradio1" autoComplete="off" defaultChecked={country === 'de' ? true : false} />
+            <label className="btn btn-outline-warning" htmlFor="btnradio1" onClick={handleGermany}>Germany</label>
 
-            <input type="radio" className="btn-check" name="btnradio" id="btnradio3" autoComplete="off" checked={country === 'in' ? true : false} />
-            <label className="btn btn-outline-secondary" htmlFor="btnradio3" onClick={handleIndia}>India</label>
+            <input type="radio" className="btn-check" name="btnradio" id="btnradio3" autoComplete="off" defaultChecked={country === 'in' ? true : false} />
+            <label className="btn btn-outline-warning" htmlFor="btnradio3" onClick={handleIndia}>India</label>
           </div>
 
           <div className="btn-group" role="group" aria-label="Basic radio toggle button second group">
-            <input type="radio" className="btn-check" name="btnradio9" id="btnradio2" autoComplete="off" checked={language === 'de' ? true : false} />
-            <label className="btn btn-outline-dark" htmlFor="btnradio2" onClick={handleGerman}>Deutsch</label>
+            <input type="radio" className="btn-check" name="btnradio9" id="btnradio2" autoComplete="off" defaultChecked={language === 'de' ? true : false} />
+            <label className="btn btn-outline-warning" htmlFor="btnradio2" onClick={handleGerman}>Deutsch</label>
 
-            <input type="radio" className="btn-check" name="btnradio9" id="btnradio5" autoComplete="off" checked={language === 'en' ? true : false} />
-            <label className="btn btn-outline-dark" htmlFor="btnradio5" onClick={handleEnglish}>English</label>
+            <input type="radio" className="btn-check" name="btnradio9" id="btnradio5" autoComplete="off" defaultChecked={language === 'en' ? true : false} />
+            <label className="btn btn-outline-warning" htmlFor="btnradio5" onClick={handleEnglish}>English</label>
           </div>
 
         </div>
