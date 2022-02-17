@@ -18,20 +18,13 @@ const App = () => {
 
   const handleGermany = () => {
     setCountry('de');
-  }
-
-  const handleIndia = () => {
-    setCountry('in');
-  }
-
-  const handleEnglish = () => {
-    setLanguage('en');
-  }
-
-  const handleGerman = () => {
     setLanguage('de');
   }
-
+  
+  const handleIndia = () => {
+    setCountry('in');
+    setLanguage('en');
+  }
 
   return (
     <div>
@@ -50,14 +43,6 @@ const App = () => {
 
             <input type="radio" className="btn-check" name="btnradio" id="btnradio3" autoComplete="off" defaultChecked={country === 'in' ? true : false} />
             <label className="btn btn-outline-warning" htmlFor="btnradio3" onClick={handleIndia}>India</label>
-          </div>
-
-          <div className="btn-group" role="group" aria-label="Basic radio toggle button second group">
-            <input type="radio" className="btn-check" name="btnradio9" id="btnradio2" autoComplete="off" defaultChecked={language === 'de' ? true : false} />
-            <label className="btn btn-outline-warning" htmlFor="btnradio2" onClick={handleGerman}>Deutsch</label>
-
-            <input type="radio" className="btn-check" name="btnradio9" id="btnradio5" autoComplete="off" defaultChecked={language === 'en' ? true : false} />
-            <label className="btn btn-outline-warning" htmlFor="btnradio5" onClick={handleEnglish}>English</label>
           </div>
 
         </div>
