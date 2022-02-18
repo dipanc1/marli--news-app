@@ -6,13 +6,14 @@
 https://marleen-news.netlify.app/
 
 
-## Installation
+## Usage
 
-Install marli--news-app with npm
+Download repo or clone repo
 
 ```bash
-  npm install marli--news-app
   cd marli--news-app
+  npm install 
+  npm start
 ```
     
 ## API Reference
